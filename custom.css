@@ -1,0 +1,102 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    margin-right: auto; /* Sposta il logo tutto a sinistra */
+}
+
+.logo img {
+    width: 100px; /* Adjust size as needed */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navSx,
+.navDx {
+    list-style: none;
+    display: flex;
+}
+
+.navSx li,
+.navDx li {
+    margin-right: 20px;
+}
+
+.navSx li:last-child,
+.navDx li:last-child {
+    margin-right: 0; /* Rimuovi il margine dall'ultimo elemento */
+}
+
+.navSx li a,
+.navDx li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.carousel, .content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.content-card {
+    position: relative;
+}
+
+.content-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.content-card h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+footer p {
+    font-size: 14px;
+}
